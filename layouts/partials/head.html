@@ -74,3 +74,6 @@
 
 <!-- Extended head section-->
 {{ partial "extended_head.html" . }}
+
+<!-- KaTex-->
+{{ if .Params.math }}{{ partial "helpers/katex.html" . }}{{ end }}
